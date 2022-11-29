@@ -25,19 +25,12 @@ public class Main {
         System.out.println("-------1-------");
         list1.forEach(i -> System.out.println(i));
 
-
-
 //  2. Итерация всех элементов списка и добавления к каждому символа '!'.
-        ListIterator<String> iterator = list1.listIterator();
-        while (iterator.hasPrevious()) {
-//            String temp = iterator + "!";
-//            iterator.set(temp);
-
-            System.out.println("=");
-        }
         System.out.println("-------2------");
-
-//        list1.forEach(i -> System.out.println(i));
+        for (String i:
+             list1) {
+            System.out.println(i + "!");
+        }
 
 //  3. Вставить элемент в список в первой позиции.
         list1.add(0, "GMC");
